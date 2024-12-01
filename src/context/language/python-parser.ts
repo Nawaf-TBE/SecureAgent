@@ -10,7 +10,7 @@ export class PythonParser implements AbstractParser {
     this.parser.setLanguage(Python);
   }
 
-  // method to 
+  #method to 
   dryRun(file: string): { valid: boolean; error: string } {
     try {
       this.parser.parse(file);
