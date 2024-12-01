@@ -10,7 +10,7 @@ export class PythonParser implements AbstractParser {
     this.parser.setLanguage(Python);
   }
 
-  #method to 
+  
   dryRun(file: string): { valid: boolean; error: string } {
     try {
       this.parser.parse(file);
@@ -19,7 +19,7 @@ export class PythonParser implements AbstractParser {
       return { valid: false, error: error.message };
     }
   }
-
+  #method to 
   findEnclosingContext(
     file: string,
     lineStart: number,
